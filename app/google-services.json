@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "86915279470",
+    "project_id": "fit4bit-v0-0-2",
+    "storage_bucket": "fit4bit-v0-0-2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:86915279470:android:b771aa80f4422bd290d47f",
+        "android_client_info": {
+          "package_name": "com.example.fit4bit_v002"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "86915279470-vq67rimi23oto2d3mcrdth6t20jn7gfv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2sSk9eb6oG97emIzAfNfgHqzZQpK2bPU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "86915279470-vq67rimi23oto2d3mcrdth6t20jn7gfv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

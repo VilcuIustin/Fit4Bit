@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardViewUtilizator"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="30dp"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="6dp"
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="20dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imagineCardProfil"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/pozafit4bit" />
+
+        <TextView
+            android:id="@+id/titluCardProfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imagineCardProfil"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="false"
+            android:fontFamily="@font/cuprum_bold"
+            android:text="Titlul este aici"
+            android:textColor="@color/LogoGigapack3"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/contentCardProfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="false"
+            android:textColor="@color/black"
+            android:fontFamily="@font/cuprum"
+            android:layout_below="@+id/titluCardProfil"
+            android:layout_marginTop="7dp"
+            android:textSize="18sp"
+            android:layout_margin="10dp"
+            android:text="Contentul este aici" />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

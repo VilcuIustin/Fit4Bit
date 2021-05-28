@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" >
+        <shape>
+            <gradient
+                android:startColor="#6546c2"
+                android:endColor="@color/LogoGigapack3"
+                android:angle="270" />
+            <stroke
+                android:width="0dp"
+                android:color="#55BDE4" />
+            <corners
+                android:radius="10dp" />
+            <padding
+                android:left="2dp"
+                android:top="2dp"
+                android:right="2dp"
+                android:bottom="2dp" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <gradient
+                android:startColor="@color/LogoGigapack3"
+                android:endColor="#6546c2"
+                android:angle="360" />
+            <stroke
+                android:width="0dp"
+                android:color="#55BDE4" />
+            <corners
+                android:radius="10dp" />
+            <padding
+                android:left="2dp"
+                android:top="2dp"
+                android:right="2dp"
+                android:bottom="2dp" />
+        </shape>
+    </item>
+</selector>

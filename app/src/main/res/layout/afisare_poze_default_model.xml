@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clayout_model_poze"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_poze_default"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cardElevation="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/clayout_model_poze"
+        app:layout_constraintHeight_percent="0.85"
+        app:layout_constraintLeft_toLeftOf="@+id/clayout_model_poze"
+        app:layout_constraintRight_toRightOf="@+id/clayout_model_poze"
+        app:layout_constraintTop_toTopOf="@+id/clayout_model_poze"
+        app:layout_constraintWidth_percent="0.95">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clayout_model_poze2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/poza_din_model_pt_antr_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/clayout_model_poze2"
+                app:layout_constraintLeft_toLeftOf="@+id/clayout_model_poze2"
+                app:layout_constraintRight_toRightOf="@+id/clayout_model_poze2"
+                app:layout_constraintTop_toTopOf="@+id/clayout_model_poze2"
+                android:src="@drawable/pozatest"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

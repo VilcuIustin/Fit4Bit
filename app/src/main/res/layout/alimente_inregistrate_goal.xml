@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:background="@color/RestEasySpecialCr7">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="366dp"
+        android:layout_height="217dp"
+        android:layout_marginTop="10dp"
+        android:checkable="true"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardBackgroundColor="@color/LogoGigapack3"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coordlayoutcalorii"
+        app:layout_constraintVertical_bias="0.32999998">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="204dp">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="304dp"
+                android:layout_height="23dp"
+                android:layout_marginBottom="16dp"
+                android:progress="0"
+                app:layout_constraintBottom_toTopOf="@+id/txt_calorii_minus"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/nr_start_bara"
+                android:layout_width="100dp"
+                android:layout_height="23dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/orbitron_medium"
+                android:gravity="center"
+                android:text="@string/val_initiala_bara_calorii"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.908"
+                app:layout_constraintStart_toEndOf="@+id/txt_calorii_minus" />
+
+            <TextView
+                android:id="@+id/txt_calorii_minus"
+                android:layout_width="100dp"
+                android:layout_height="16dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/orbitron_medium"
+                android:gravity="center"
+                android:text="@string/_0"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/label_progres"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/cuprum_bold"
+                android:gravity="center_horizontal"
+                android:text="@string/progresul_dvs"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/progressBar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Spinner
+                android:id="@+id/spinner_activ"
+                android:layout_width="218dp"
+                android:layout_height="34dp"
+                android:layout_marginBottom="16dp"
+                android:dropDownSelector="@drawable/dropdown_white"
+                android:spinnerMode="dropdown"
+                app:layout_constraintBottom_toTopOf="@+id/label_progres"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/nr_final_bara"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/orbitron_medium"
+                android:gravity="center"
+                android:text="@string/val_finala_bara_calorii"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/txt_calorii_minus"
+                app:layout_constraintHorizontal_bias="0.091"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="240dp"
+                android:layout_height="29dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/cuprum_bold"
+                android:gravity="center"
+                android:text="@string/cat_de_activ_sunteti"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/spinner_activ"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordlayoutcalorii"
+        android:layout_width="match_parent"
+        android:layout_height="430dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabadaugaaliment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|end"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/culoareBonus"
+            android:clickable="true"
+            android:elevation="14dp"
+            android:focusable="true"
+            app:borderWidth="0dp"
+            app:fabSize="mini"
+            app:layout_behavior="com.example.fit4bit_v002.ScrollAwareFABBehavior"
+            app:rippleColor="@color/RestHardSpecialCr7"
+            app:srcCompat="@drawable/ic_add_floating_action_button" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabschimbarecview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|end"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="@color/culoareBonus"
+            android:clickable="true"
+            android:elevation="14dp"
+            android:focusable="true"
+            app:borderWidth="0dp"
+            app:fabSize="mini"
+            app:layout_behavior="com.example.fit4bit_v002.ScrollAwareFABBehavior"
+            app:rippleColor="@color/RestHardSpecialCr7"
+            app:srcCompat="@drawable/ic_baseline_layers_24" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/alimenteRecView"
+            android:layout_width="match_parent"
+            android:layout_height="430dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></androidx.recyclerview.widget.RecyclerView>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

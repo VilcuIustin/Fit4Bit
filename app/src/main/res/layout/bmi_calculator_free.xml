@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/RestEasySpecialCr7"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="-26dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="310dp"
+            android:layout_height="304dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="28dp"
+            app:cardElevation="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/materialCardView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/txt_nd_masa"
+                    android:layout_width="45dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:ems="10"
+                    android:hint="@string/gol"
+                    android:importantForAutofill="no"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/LogoGigapack3"
+                    app:layout_constraintBottom_toTopOf="@+id/txt_nd_inaltime"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.182" />
+
+                <TextView
+                    android:id="@+id/label_masa"
+                    android:layout_width="197dp"
+                    android:layout_height="39dp"
+                    android:layout_marginTop="80dp"
+                    android:fontFamily="@font/orbitron_bold"
+                    android:gravity="center"
+                    android:text="@string/introduceti_masa_dvs_in_kg"
+                    android:textColor="@color/LogoGigapack3"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@+id/txt_nd_masa"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/label_inaltime"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/label_inaltime"
+                    android:layout_width="210dp"
+                    android:layout_height="37dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="60dp"
+                    android:fontFamily="@font/orbitron_bold"
+                    android:gravity="center"
+                    android:text="@string/introduceti_inaltimea_dvs_in_m"
+                    android:textColor="@color/LogoGigapack3"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/txt_nd_inaltime" />
+
+                <EditText
+                    android:id="@+id/txt_nd_inaltime"
+                    android:layout_width="45dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="60dp"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:hint="@string/gol"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/LogoGigapack3"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/txt_nd_masa"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/txt_nd_masa" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardView"
+            android:layout_width="303dp"
+            android:layout_height="227dp"
+            android:layout_marginBottom="70dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="28dp"
+            app:cardElevation="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="304dp"
+                android:layout_height="194dp">
+
+                <TextView
+                    android:id="@+id/rezultat_bmi_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:fontFamily="@font/orbitron_bold"
+                    android:gravity="center"
+                    android:text="@string/rezultat_2"
+                    android:textColor="@color/LogoGigapack3"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/rezultat_bmi_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:layout_marginBottom="32dp"
+                    android:fontFamily="@font/orbitron_bold"
+                    android:gravity="center"
+                    android:text="@string/rezultat"
+                    android:textColor="@color/LogoGigapack3"
+                    app:layout_constraintBottom_toTopOf="@+id/rezultat_bmi_2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.501"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/buton_calculeaza_bmi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/orbitron_bold"
+                    android:text="@string/calculeaza_bmi"
+                    android:ems="13"
+                    android:textStyle="bold"
+                    android:background="@drawable/buton_style_1"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toTopOf="@+id/rezultat_bmi_1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

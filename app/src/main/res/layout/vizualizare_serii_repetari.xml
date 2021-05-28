@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:paddingEnd="30dp">
+
+    <TextView
+        android:id="@+id/serie_numar_recviu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:fontFamily="@font/cuprum_bold"
+        android:textColor="@color/culoareBonus"
+        android:text="@string/textview"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/numar_repetari_recviu"
+        android:fontFamily="@font/cuprum"
+        android:textSize="20sp"
+        android:textColor="@color/culoareBonus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@+id/serie_numar_recviu"
+        android:layout_toRightOf="@+id/serie_numar_recviu"
+        android:text="@string/textview"
+        android:gravity="start" />
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="@string/general">
+        <menu>
+            <item
+                android:id="@+id/profile"
+                android:icon="@drawable/profile_ico"
+                android:title="@string/profil" />
+            <item
+                android:id="@+id/home"
+                android:icon="@drawable/drawer_home"
+                android:title="@string/acasa" />
+            <item
+                android:id="@+id/settings_menu_drawer"
+                android:icon="@drawable/ic_settings"
+                android:title="@string/setari" />
+        </menu>
+    </item>
+
+    <item android:title="@string/calculatoare_fit4bit">
+        <menu>
+            <item
+                android:id="@+id/calculatorBmr"
+                android:icon="@drawable/drawer_calculator_bmr"
+                android:title="@string/calculator_bmr" />
+            <item
+                android:id="@+id/calculatorBmi"
+                android:icon="@drawable/drawer_calculator_bmr"
+                android:title="@string/calculator_bmi" />
+        </menu>
+    </item>
+
+    <item android:title="@string/alimentatie">
+        <menu>
+            <item
+                android:id="@+id/alimentatie_drawer"
+                android:icon="@drawable/drawer_food"
+                android:title="@string/alimente_si_obiectiv" />
+
+        </menu>
+    </item>
+
+    <item android:title="@string/antrenamente">
+        <menu>
+            <item
+                android:id="@+id/antrenamente_drawer"
+                android:icon="@drawable/drawer_antrenamente"
+                android:title="@string/antrenamente" />
+            <item
+                android:id="@+id/antrenamentesugerate"
+                android:icon="@drawable/drawer_antrenamente"
+                android:title="@string/sugestie_antrenament" />
+        </menu>
+    </item>
+
+    <item android:title="Log out">
+        <menu>
+            <item
+                android:id="@+id/logout_drawer"
+                android:icon="@drawable/exitfromfit4bit"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

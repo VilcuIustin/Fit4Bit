@@ -1,0 +1,126 @@
+<resources>
+    <string name="app_name">Fit4Bit_v0.0.2</string>
+    <string name="bmi_titlu">Calculator BMI</string>
+    <string name="string_bmi_titlu">Calculator BMI</string>
+    <string name="introduceti_inaltimea_dvs_in_m">Introduceti inaltimea dvs. in m:</string>
+    <string name="introduceti_masa_dvs_in_kg">Introduceti masa dvs. in kg:</string>
+    <string name="calculeaza_bmi">Calculeaza BMI</string>
+    <string name="rezultat">rezultat:</string>
+    <string name="rezultat_2" />
+    <string name="bmr_titlu">Calculator BMR</string>
+    <string name="bmr_label_masa">Introduceti masa dvs. in kg:</string>
+    <string name="bmr_label_inaltime">Introduceti inaltimea dvs. in cm:</string>
+    <string name="bmr_label_varsta">Introduceti varsta dvs. :</string>
+    <string name="bmr_label_sex">Selectati sexul dvs. :</string>
+    <string name="bmr_buton_calculeaza">Calculeaza BMR-ul</string>
+    <string name="gol"></string>
+    <string name="M">M</string>
+    <string name="F">F</string>
+    <string name="f">F</string>
+    <string name="m">M</string>
+    <string name="progresul_dvs">Ati consumat: %d calorii pana acum</string>
+    <string name="val_initiala_bara_calorii">0</string>
+    <string name="val_finala_bara_calorii">0</string>
+    <string name="cat_de_activ_sunteti">Cat de activ sunteti ?</string>
+    <string name="setari">Setari</string>
+    <string name="schimbare_culori">Schimbare culori</string>
+    <string name="aplicatie_realizata_de_comsa_radu_si_vilcu_iustin">Aplicatie realizata de Comsa Radu si Vilcu Iustin</string>
+    <string-array name="activity_level">
+        <item>Sedentar</item>
+        <item>Putin activ</item>
+        <item>Activ moderat</item>
+        <item>Foarte activ</item>
+        <item>Extrem de activ</item>
+    </string-array>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- xml nustiu care Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="title_activity_adaugare_antrenament_11">ScrollingActivity</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="sterge_aliment">Sterge aliment</string>
+    <string name="adauga_calorii_aliment">Adauga Caloriile</string>
+    <string name="cancel_popup_dialog">Cancel</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="fit4bit">Fit4Bit</string>
+    <string name="general">General</string>
+    <string name="acasa">Acasa</string>
+    <string name="calculatoare_fit4bit">Calculatoare Fit4Bit</string>
+    <string name="calculator_bmr">Calculator BMR</string>
+    <string name="calculator_bmi">Calculator BMI</string>
+    <string name="alimentatie">Alimentatie</string>
+    <string name="alimente_si_obiectiv">Alimente si obiectiv</string>
+    <string name="antrenamente">Antrenamente personale</string>
+    <string name="sugestie_antrenament">Sugestie antrenament</string>
+    <string name="_0">0</string>
+    <string name="profil">Profil</string>
+    <string-array name="activitate_utilizator">
+        <item>Sedentar</item>
+        <item>Putin activ</item>
+        <item>Moderat activ</item>
+        <item>Foarte activ</item>
+        <item>Extrem de activ</item>
+    </string-array>
+
+    <!--    prima pagina aka welcome   -->
+    <string name="welcome_msg">Bine ai venit in aplicatia Fit4Bit!</string>
+    <string name="login_btn">Conecteaza-te!</string>
+    <string name="register_btn">Inregistreaza-te!</string>
+    <!--    prima pagina aka welcome   -->
+
+    <!--    register   -->
+    <string name="Data">Data</string>
+    <string name="durata_d">Durata:</string>
+    <string name="numele_exercitiului">numele exercitiului</string>
+    <string name="plusulet">+</string>
+    <string name="nume_ex">Nume ex:</string>
+    <string name="numarul_seriei">numarul seriei:</string>
+    <string name="numar_repetari">numar repetari</string>
+    <string name="introduceti_numele_antrenamentului">Introduceti numele antrenamentului</string>
+    <string name="save">Save</string>
+    <string name="aliment_din_lista_de_alimente">Aliment din lista de alimente</string>
+    <string name="adauga_caloriile">Adauga caloriile</string>
+    <string name="vizualizeaza_antrenamentul">Vizualizeaza Antrenamentul</string>
+    <string name="nume_antrenament">Nume Antrenament</string>
+    <string name="sterge_antrenamentul">Sterge Antrenamentul</string>
+    <string name="textview">TextView</string>
+    <string name="textvieww">TextView</string>
+    <string name="textulettt">textulet</string>
+    <string name="data">Data</string>
+    <string name="emailll">Email</string>
+    <string name="parola">Parola</string>
+    <string name="nume">Nume</string>
+    <string name="alegeti_sexul">Alegeti sexul:</string>
+    <string name="cateva_informatii_despre_acest_card">Cateva informatii despre acest card!</string>
+    <string name="informatie_informatie_informati_informatie_informatie_informatie">Informatie informatie informati informatie informatie informatie</string>
+    <string name="textviewww">TextView</string>
+    <string name="textviewwww">TextView</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="textulet">textulet</string>
+    <string name="varsta">varsta</string>
+    <string name="inaltime_schimbare">Inaltime</string>
+    <string name="sarci">sarci</string>
+
+    <!--    register   -->
+
+    <!--    login-->
+
+    <!--    login-->
+
+
+</resources>

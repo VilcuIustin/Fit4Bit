@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/datepicker_schimbare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buton_style_1"
+        android:fontFamily="@font/cuprum_bold"
+        android:text="@string/Data"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.74"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/data_schimbare"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/cuprum"
+        android:hint="@string/data"
+        android:inputType="date"
+        android:textColor="@color/culoareBonus"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/inaltime_schimbare"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/cuprum"
+        android:hint="@string/inaltime_schimbare"
+        android:inputType="numberDecimal"
+        android:textColor="@color/culoareBonus"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buton_schimba_detalii_cont"
+        android:layout_width="196dp"
+        android:layout_height="47dp"
+        android:background="@drawable/buton_style_1"
+        android:fontFamily="@font/cuprum_bold"
+        android:text="schimbati datele dvs."
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <EditText
+        android:id="@+id/nume_schimbare"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/cuprum"
+        android:hint="@string/nume"
+        android:inputType="textPersonName"
+        android:textColor="@color/culoareBonus"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <RadioGroup
+        android:id="@+id/sex_modifica"
+        android:layout_width="116dp"
+        android:layout_height="47dp"
+        android:orientation='horizontal'
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.859"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.602">
+
+        <RadioButton
+            android:id="@+id/cb_M_schimbare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cuprum_bold"
+            android:text="@string/M"
+            android:textColor="@color/culoareBonus"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/cb_F_schimbare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/cuprum_bold"
+            android:text="@string/F"
+            android:textColor="@color/culoareBonus"
+            android:textSize="18sp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/alegeti_sexul_schimbare"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/cuprum_bold"
+        android:text="@string/alegeti_sexul"
+        android:textColor="@color/culoareBonus"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.33"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.598" />
+
+    <EditText
+        android:id="@+id/alegeti_masa_schimbare"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/cuprum"
+        android:hint="Masa"
+        android:inputType="numberDecimal"
+        android:textColor="@color/culoareBonus"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parinteLA2"
+    android:layout_width="match_parent"
+    android:layout_height="250dp">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardAntrenament"
+        android:layout_width="362dp"
+        android:layout_height="214dp"
+        app:cardCornerRadius="28dp"
+        app:cardElevation="7dp"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="517dp"
+        android:layout_centerInParent="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buton_sterge_antr"
+                android:layout_width="150dp"
+                android:layout_height="56dp"
+                android:text="@string/sterge_antrenamentul"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:background="@drawable/buton_style_1"
+                android:fontFamily="@font/cuprum_bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.9"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.877" />
+
+            <TextView
+                android:id="@+id/nume_antrenament"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:textSize="30sp"
+                android:gravity="center_horizontal"
+                android:fontFamily="@font/cuprum_bold"
+                android:textColor="@color/LogoGigapack3"
+                android:text="@string/nume_antrenament"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.120000005" />
+
+            <TextView
+                android:id="@+id/durata_antrenament"
+                android:layout_width="wrap_content"
+                android:layout_height="23dp"
+                android:gravity="center_horizontal"
+                android:fontFamily="@font/cuprum_bold"
+                android:text="@string/durata_d"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:textColor="@color/culoareBonus"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.32999998" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buton_viz_antr"
+                android:layout_width="150dp"
+                android:layout_height="56dp"
+                android:text="@string/vizualizeaza_antrenamentul"
+                android:textSize="14sp"
+                android:background="@drawable/buton_style_1"
+                android:textColor="@color/white"
+                android:fontFamily="@font/cuprum_bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.88" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

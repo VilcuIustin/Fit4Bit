@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/aclonica</item>
+        <item>@font/anaheim</item>
+        <item>@font/cuprum</item>
+        <item>@font/cuprum_bold</item>
+        <item>@font/cuprum_bold_italic</item>
+        <item>@font/cuprum_italic</item>
+        <item>@font/orbitron</item>
+        <item>@font/orbitron_bold</item>
+        <item>@font/orbitron_medium</item>
+    </array>
+</resources>

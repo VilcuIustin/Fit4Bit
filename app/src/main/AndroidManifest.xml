@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fit4bit_v002">
+    <uses-feature android:name="android.hardware.camera"
+        android:required="true" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Fit4Bit_v002.NoActionBar2">
+
+
+        <activity android:name=".VizualizareAntrenament" android:screenOrientation="portrait"/>
+        <activity android:name=".Welcome" android:screenOrientation="portrait"/>
+        <activity android:name=".Login" android:screenOrientation="portrait"/>
+        <activity android:name=".Register" android:screenOrientation="portrait"/>
+        <activity android:name=".EditareAdaugareAntrenament" android:screenOrientation="portrait"/>
+        <activity android:name=".ListviewSubCategorii" android:screenOrientation="portrait"/>
+        <activity android:name=".AfisarePozaDefault" android:screenOrientation="portrait"/>
+        <activity android:name=".ModificaUtilizator" android:screenOrientation="portrait"/>
+        <activity android:name=".AdaugaAliment" android:screenOrientation="portrait"/>
+        <activity android:name=".MainActivity" android:theme="@style/Theme.Fit4Bit_v002.NoActionBar2" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+
+</manifest>
