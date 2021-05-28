@@ -34,7 +34,7 @@ public class ModificaUtilizator extends AppCompatActivity {
     private EditText nume, masa, inaltime, date;
     private Button datePicker, save;
     private char sex;
-    TextWatcher textWatcher1 = new TextWatcher() {
+    TextWatcher textWatcher= new TextWatcher() {
         @Override
         public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 
@@ -47,30 +47,25 @@ public class ModificaUtilizator extends AppCompatActivity {
 
         @Override
         public void afterTextChanged(Editable s) {
-            String text = s.toString();
-            int length = text.length();
-
-            if (length > 0 && !Pattern.matches("[1-9]{0,3}\\.*[0-9]", text)) {
-                s.delete(length - 1, length);
+            if ((s.toString().length() == 1 &&( s.toString().startsWith("0")) ||  s.toString().startsWith("."))){
+                s.clear();
             }
         }
     };
-    TextWatcher textWatcher2 = new TextWatcher() {
+
+    TextWatcher textWatcherInaltime = new TextWatcher() {
         @Override
         public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
         }
 
         @Override
         public void onTextChanged(CharSequence s, int start, int before, int count) {
-
         }
 
         @Override
         public void afterTextChanged(Editable s) {
             String text = s.toString();
             int length = text.length();
-
             if (length > 0 && !Pattern.matches("[1-2]\\.*[0-9]{0,2}", text)) {
                 s.delete(length - 1, length);
             }
@@ -103,14 +98,14 @@ public class ModificaUtilizator extends AppCompatActivity {
                                 masa = findViewById(R.id.alegeti_masa_schimbare);
                                 masa.setText(utilizator.getMasa() + "");
 
-                                masa.addTextChangedListener(textWatcher1);
+                                masa.addTextChangedListener(textWatcher);
 
 
 
 
                                 inaltime = findViewById(R.id.inaltime_schimbare);
                                 inaltime.setText(utilizator.getInaltime() + "");
-                                inaltime.addTextChangedListener(textWatcher2);
+                                inaltime.addTextChangedListener(textWatcherInaltime);
                                 datePicker = findViewById(R.id.datepicker_schimbare);
                                 RadioGroup c = findViewById(R.id.sex_modifica);
                                 if (utilizator.getSex() == 'M')

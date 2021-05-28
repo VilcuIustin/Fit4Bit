@@ -47,20 +47,20 @@ public class AfisarePozaDefaultRecView extends RecyclerView.Adapter<AfisarePozaD
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-//        Thread t = new Thread(){
-//            @Override
-//            public void run() {
-//                Log.e("ceva","https://10.0.2.2:44336/"+listaPoze.get(position));
-//                Bitmap b=c.loadImage("https://10.0.2.2:44336/"+listaPoze.get(position));
-//                afisarePozaDefault.runOnUiThread(new Runnable() {
-//                    @Override
-//                    public void run() {
-//                        holder.imageView.setImageBitmap(b);
-//                    }
-//                });
-//            }
-//        };
-//       t.start();
+        Thread t = new Thread(){
+            @Override
+            public void run() {
+                Log.e("ceva","https://10.0.2.2:44336/"+listaPoze.get(position));
+                Bitmap b=c.loadImage("https://10.0.2.2:44336/"+listaPoze.get(position));
+                afisarePozaDefault.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        holder.imageView.setImageBitmap(b);
+                    }
+                });
+            }
+        };
+       t.start();
     }
 
     @Override

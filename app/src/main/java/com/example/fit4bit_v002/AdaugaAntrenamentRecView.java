@@ -57,18 +57,10 @@ public class AdaugaAntrenamentRecView extends RecyclerView.Adapter<AdaugaAntrena
         holder.numeExercitiu.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
             }
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-//                    .a contor++ b contor++ c -> "" pt ca contor==3              1.22
-                if(s.length()>4){
-//                    holder.numeExercitiu.setText(holder.numeExercitiu.getText().delete());
-                   // holder.numeExercitiu.setText(holder.numeExercitiu.getText().delete(start,start));
-                    holder.numeExercitiu.setText("coaie");
-                }
-                System.out.println(start+"  "+before+"   "+count);
             }
 
             @Override
@@ -78,7 +70,6 @@ public class AdaugaAntrenamentRecView extends RecyclerView.Adapter<AdaugaAntrena
             }
         });
 
-
         holder.adaugaSerie.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -86,8 +77,6 @@ public class AdaugaAntrenamentRecView extends RecyclerView.Adapter<AdaugaAntrena
                 adapterr.addRepetare(r);
             }
         });
-
-
     }
 
     @Override

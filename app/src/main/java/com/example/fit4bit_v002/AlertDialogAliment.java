@@ -35,20 +35,35 @@ public class AlertDialogAliment {
             @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                iSetezCalorii.setCalorii(iSetezCalorii.getCalorii()+calorii);
 
-                if (iSetezCalorii.getCalorii() + calorii > progressBar.getMax()) {
-                    diferenta = (int)(iSetezCalorii.getCalorii() + calorii)-progressBar.getMax();
-                    System.out.println(diferenta);
-                    txt_calorii_minus.setText(diferenta+"");
-
+                if(progressBar.getProgress()+calorii<=progressBar.getMax()){
+                    iSetezCalorii.setCalorii(iSetezCalorii.getCalorii()+calorii);
+                    progressBar.setProgress((int) (iSetezCalorii.getCalorii()));
+                }else{
+                    iSetezCalorii.setCalorii(iSetezCalorii.getCalorii()+calorii);
                     progressBar.setProgressTintList(ColorStateList.valueOf(Color.parseColor("#ff426e")));
-
+                    progressBar.setProgress((int) (iSetezCalorii.getCalorii()+calorii));
+                    diferenta=(int)iSetezCalorii.getCalorii()-progressBar.getMax();
+                    txt_calorii_minus.setText(diferenta+"");
                 }
-                    progressBar.incrementProgressBy(calorii);
-                    Resources res = view.getResources();
-                    String mesaj = res.getString(R.string.progresul_dvs, (int)iSetezCalorii.getCalorii());
-                    label_progres.setText(mesaj);
+                Resources res = view.getResources();
+                String mesaj = res.getString(R.string.progresul_dvs, (int) iSetezCalorii.getCalorii());
+                label_progres.setText(mesaj);
+
+//                iSetezCalorii.setCalorii(iSetezCalorii.getCalorii()+calorii);
+//                Log.e("ceva", "onClick: "+progressBar.getMax() );
+//                if (iSetezCalorii.getCalorii()  > progressBar.getMax()) {
+//                    diferenta = (int)(iSetezCalorii.getCalorii())-progressBar.getMax();
+//                    System.out.println(diferenta);
+//                    txt_calorii_minus.setText(diferenta+"");
+//
+//                    progressBar.setProgressTintList(ColorStateList.valueOf(Color.parseColor("#ff426e")));
+//
+//                }
+//                    progressBar.incrementProgressBy(calorii);
+//                    Resources res = view.getResources();
+//                    String mesaj = res.getString(R.string.progresul_dvs, (int)iSetezCalorii.getCalorii());
+//                    label_progres.setText(mesaj);
 
             }
         });

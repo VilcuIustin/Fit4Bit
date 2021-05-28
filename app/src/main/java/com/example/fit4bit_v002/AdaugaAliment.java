@@ -4,6 +4,8 @@ package com.example.fit4bit_v002;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Looper;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -12,12 +14,77 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.io.Serializable;
+import java.util.regex.Pattern;
 
 public class AdaugaAliment extends AppCompatActivity {
 
     private EditText nume, calorii, cantitate, proteine, carbohidrati, grasimi;
     private Button cancel, save;
     private Aliment aliment;
+
+    TextWatcher cantitateWatcher = new TextWatcher() {
+        @Override
+        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+        }
+
+        @Override
+        public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+        }
+
+        @Override
+        public void afterTextChanged(Editable s) {
+            String text = s.toString();
+            int length = text.length();
+
+            if (length > 0 && !Pattern.matches("[1-9][0-9]{0,3}", text)) {
+                s.delete(length - 1, length);
+            }
+        }
+    };
+    TextWatcher macroWatcher = new TextWatcher() {
+        @Override
+        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+        }
+
+        @Override
+        public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+        }
+
+        @Override
+        public void afterTextChanged(Editable s) {
+            String text = s.toString();
+            int length = text.length();
+
+            if (length > 0 && !Pattern.matches("[0-9][1-9]{0,2}", text)) {
+                s.delete(length - 1, length);
+            }
+        }
+    };
+    TextWatcher caloriiWatcher = new TextWatcher() {
+        @Override
+        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+        }
+
+        @Override
+        public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+        }
+
+        @Override
+        public void afterTextChanged(Editable s) {
+            String text = s.toString();
+            int length = text.length();
+
+            if (length > 0 && !Pattern.matches("[1-9][0-9]{0,3}", text)) {
+                s.delete(length - 1, length);
+            }
+        }
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,12 +93,17 @@ public class AdaugaAliment extends AppCompatActivity {
         nume = findViewById(R.id.aliment);
         calorii = findViewById(R.id.calorii);
         cantitate = findViewById(R.id.cantitate);
+        cantitate.addTextChangedListener(cantitateWatcher);
         proteine = findViewById(R.id.proteine);
         carbohidrati = findViewById(R.id.carbohidrati);
         grasimi = findViewById(R.id.grasimi);
         cancel = findViewById(R.id.anulare);
         save = findViewById(R.id.salvarea_aliment);
         cancel= findViewById(R.id.anulare);
+        carbohidrati.addTextChangedListener(macroWatcher);
+        proteine.addTextChangedListener(macroWatcher);
+        grasimi.addTextChangedListener(macroWatcher);
+        calorii.addTextChangedListener(caloriiWatcher);
         Comunication comunication = new Comunication(this);
         save.setOnClickListener(new View.OnClickListener() {
             @Override

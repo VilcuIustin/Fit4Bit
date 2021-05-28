@@ -191,16 +191,27 @@ public class Alimente_inregistrate_goal extends Fragment {
                                         progressBar.setMax((listaRezultateBmr.get(4).intValue()));
                                         break;
                                 }
-                                if (progressBar.getMax() < calorii)
-                                    txt_calorii_minus.setText("" + (int) (calorii - progressBar.getMax()));
 
-                                if (progressBar.getMax() > progressBar.getProgress() + Integer.parseInt(txt_calorii_minus.getText().toString())) {
+                                if(iSetezCalorii.getCalorii()<=progressBar.getMax()){
                                     progressBar.setProgressTintList(ColorStateList.valueOf(Color.parseColor("#76ff03")));
                                     txt_calorii_minus.setText(0 + "");
-                                } else {
+                                }else{
+                                    txt_calorii_minus.setText(""+((int)iSetezCalorii.getCalorii()-progressBar.getMax()));
                                     progressBar.setProgressTintList(ColorStateList.valueOf(Color.parseColor("#ff426e")));
-
                                 }
+                                progressBar.setProgress((int)iSetezCalorii.getCalorii());
+
+
+//                                if (progressBar.getMax() < iSetezCalorii.getCalorii())
+//                                    txt_calorii_minus.setText("" + (int) (iSetezCalorii.getCalorii() - progressBar.getMax()));
+//
+//                                if (progressBar.getMax() > iSetezCalorii.getCalorii()) {
+//                                    progressBar.setProgressTintList(ColorStateList.valueOf(Color.parseColor("#76ff03")));
+//                                    txt_calorii_minus.setText(0 + "");
+//                                } else {
+//
+//
+//                                }
                             }
 
                             @Override
